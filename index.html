@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play PolyTrack</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        .game-container {
+            width: 95%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9; /* Keeps the game in widescreen format */
+            border: 2px solid #ff2a4b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .fallback-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff2a4b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PolyTrack</h1>
+    
+    <div class="game-container">
+        <!-- itch.io direct embed link for PolyTrack -->
+        <iframe src="https://itch.io" allowfullscreen>
+            <a href="https://kodub.itch.io/polytrack">Play PolyTrack on itch.io</a>
+        </iframe>
+    </div>
+
+    <a class="fallback-btn" href="https://kodub.itch.io/polytrack" target="_blank">Open Fullscreen on Itch</a>
+
+</body>
+</html>
